@@ -3,6 +3,17 @@
     --primary:#515151;
     --white-color: #F8F8F8;
 }
+@font-face {
+    font-family: Avenir;
+    src: url('asset/images/Avenir-Black.ttf');
+}
+@font-face {
+    font-family: Avenir;
+    src: url('asset/images/Avenir-Medium.ttf');
+}
+*{
+    font-family: Avenir;
+}
 .navbar{
     height: 120px;
     box-shadow: none;
@@ -40,7 +51,7 @@ input {
     padding: 10px;
     width: 100%;
     font-size: 17px;
-    font-family: Raleway;
+    font-family: Avenir;
     border: 1px solid #aaaaaa;
 }
 
@@ -60,7 +71,7 @@ button {
     border: none;
     padding: 10px 20px;
     font-size: 17px;
-    font-family: Raleway;
+    font-family: Avenir;
     cursor: pointer;
 }
 
@@ -178,6 +189,7 @@ button:hover {
     text-align: center;
     border: 2px solid var(--primary);
 }
+
 .log-btn{
     width: 100%;
     margin-top: 8px;
@@ -253,17 +265,225 @@ button:hover {
 .card-row{
     padding-bottom: 70px;
 }
+.fabric-section{
+    margin-top: 100px;
+}
+.fabric-content{
+    width: 85%;
+}
 
 
 
+/* ====================== Fabric Card ===================== */
+.fabric-card{
+    /* padding: 20px; */
+    border: 1px solid #51515131;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.f-head{
+    background-color: var(--primary-bg);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.f-head h6{
+
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin: 0px;
+}
+.f-head p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        text-align: center;
+}
+.f-text{
+    padding: 14px;
+    padding-top: 20px;
+    text-align: center;
+}
+.f-text p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+}
+.f-p2{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #51515131;
+}
+.f-text p span{
+    font-weight: 500 !important;
+    font-size: 15px;
+}
+.f-bed {
+    padding: 14px 63px;
+    text-align: center;
+}
+.f-bed p{
+    
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: center;
+}
+.fabric-content{
+    width: 55%;
+}
+.moto-content{
+    width: 32%;
+}
+.f-type{
+    display: flex;
+    justify-content: space-between;
+    width: 91%;
+    padding: 10px 45px;
+    background-color: var(--primary-bg);
+    border-radius: 5px;
+}
+.f-type p{
+    font-weight: 400;
+}
+.f-btn{
+    background-color: var(--primary-bg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin-top: 30px;
+}
+.f-btn button{
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 5px 30px;
+    border-radius: 6px;
+    transition: all .3s ease-in-out;
+}
+.f-btn button:hover{
+    background-color: var(--primary);
+    color: var(--white-color);
+}
+.f-card-bottom{
+    background-color: var(--primary-bg);
+    padding: 20px 50px;
+    text-align: center;
+}
+.f-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.fabric-btn {
+    width: 40%;
+}
+
+.fm-btn{    
+    margin-top: 100px;
+}
+
+.moto-section{
+    margin-top: 100px   ;
+}
+.moto-cards{
+    width: 90%;
+}
+.moto-card{
+    /* padding: 20px; */
+    border: 1px solid #51515136;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.moto-icon{
+    padding: 20px;
+}
+.moto-bed{
+    /* padding: 30px 0px; */
+    /* padding: 20px; */
+}
+.moto-qty{
+    padding: 20px;
+}
+.moto-tag{
+    padding: 20px;
+}
+.moto-btn{
+    width: 100%;
+    background-color: var(--primary-bg);
+    padding: 20px
+}
+.moto-tag p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+   
+}
+.moto-btn button{
+    background-color: var(--primary);
+    padding: 6px 25px;
+    color: white;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+}
+.moto-end-btn{
+    margin-top: 50px;
+    width: 30%;
+}
+.moto-price{
+    width: 30%;
+}
+.moto-last-btn{
+    margin-top: 35px;
+}
+.moto-last-btn a {
+    background-color: transparent !important;
+    
+    border-radius: 5px;
+    color: var(--primary);
+    transition: all .3s ease-in-out;
+    padding: 25px 159px;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border: 2px solid var(--primary);
+}
+/* +++++++++++++++++++ MODAL ========== ======= */
+.modal-btn{
+    background: transparent;
+    box-shadow: none;
+    color: var(--primary);
+    border: none;
+}
+.modal-btn:hover{
+    background: transparent;
+    box-shadow: none !important;
+    color: var(--primary);
+}
+.modal-btn:focus{
+    background: var(--primary-bg) !important;
+    box-shadow: none !important;
+    color: var(--primary) !important; 
+}
+.modal
 
 
-
-
-
-
-
-
+/* +++++++++++++++++++ End MODAL ================= */
 
 
 
@@ -289,3 +509,32 @@ footer{
     color: var(--white-color);
     padding: 20px 0px;
 }
+
+
+
+/* ============================================ */
+/* ============================================ */
+/* =================== Flickty Slider ================= */
+/* external css: flickity.css */
+/* external css: flickity.css */
+
+/* external css: flickity.css */
+
+
+.carousel {
+    /* width: 500px; */
+}
+
+.carousel-cell {
+    /* width: 100%; */
+    /* height: 300px; */
+  
+    /* counter-increment: gallery-cell; */
+}
+
+/* cell number */
+
+
+/* ============================================ */
+/* ============================================ */
+/* =================== End Flickty Slider ================= */
