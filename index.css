@@ -662,7 +662,43 @@ button:hover {
 }
 
 /* =========================== END PAYMENT SECTION ====================== */
+.moto-modal-btn{
+    background-color: transparent;
+    box-shadow: none;
+}
+.moto-modal-btn:hover{
+    box-shadow: none !important;
+}
+.cons-header{
 
+    background-color: var(--primary-bg);
+}
+.cons-title{
+    text-align: center;
+    margin: auto;
+    margin-right: 0px;
+}
+.cons-body{
+    margin-top: 50px;
+    width: 89%;
+    margin: auto;
+}
+.cons-body p{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.cons-btn{
+    width: 100%;
+}
+.cons-btn button{
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
 
 
@@ -698,17 +734,47 @@ footer{
 
 /* external css: flickity.css */
 
-
-.carousel {
-    /* width: 500px; */
+.fabr-slide-content{
+    padding: 50px;
 }
-
+.fabr-slide-content ul li{
+    padding: 8px 0px;
+}
+.carousel{
+    width: 100%;
+}
 .carousel-cell {
-    /* width: 100%; */
-    /* height: 300px; */
-  
-    /* counter-increment: gallery-cell; */
+    width: 100%;
 }
+.flickity-page-dots {
+    top: 38%;
+}
+.flickity-page-dots .dot {
+    background-color: white;
+    border: 2px solid black;
+    width: 15px ;
+    height: 15px;
+    margin: 0px 5px;
+}
+.flickity-prev-next-button.next{
+    display: none;
+}
+.flickity-prev-next-button.previous{
+    display: none;
+}
+.flickity-page-dots .dot.is-selected{
+    background-color: black;
+}
+
+/* cell number */
+/* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+} */
 
 /* cell number */
 
