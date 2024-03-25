@@ -77,6 +77,8 @@ margin-left: 20px;
     color: var(--white-color);
     text-align: center;
     font-weight: 800;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
 }
 .back-btn a{
     width: 100%;
@@ -87,4 +89,5 @@ margin-left: 20px;
     padding: 15px 0px;
     font-weight: 800;
     text-align: center;
+    border-radius: 6px;
 }
