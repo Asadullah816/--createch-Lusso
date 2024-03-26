@@ -701,6 +701,8 @@ button:hover {
 .moto-modal-btn{
     background-color: transparent;
     box-shadow: none;
+    font-weight: 600;
+    padding: 10px 0px 10px 0px;
 }
 .moto-modal-btn:hover{
     box-shadow: none !important;
@@ -843,7 +845,7 @@ footer{
     outline-color: var(--primary);
 } */
 .car-modal{
-    height: 720px;
+    /* height: 720px; */
 }
 /* ====================== */
 /* ====================== */
@@ -861,7 +863,7 @@ footer{
 
 .second-div {
     display: flex;
-    width: 300%;
+    width: 200%;
     height: 100%;
 }
 
