@@ -890,3 +890,31 @@ footer{
     border-radius: 100px;
     cursor: pointer;
 }
+/* ===================== */
+.carousel-indicators [data-mdb-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px !important;
+    border: 1px solid black;
+    background-color: white;
+}
+.carousel-indicators .active{
+    background-color: black;
+}
+.carousel-indicators{
+    top: 280px;
+}
+.car-modal-fabric{
+    margin-top: -51px;
+}
+.car-modal{
+    padding: 0px;
+}
+.modal-header .btn-close{
+    z-index: 100;
+    background-color: white;
+    border-radius: 100px;
+}
+.fb-modal-header{
+    background-color: transparent;
+}
