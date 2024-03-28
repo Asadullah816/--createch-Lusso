@@ -1,36 +1,44 @@
-:root{
+:root {
     --primary-bg: #F8F8F8;
-    --primary:#515151;
+    --primary: #515151;
     --white-color: #F8F8F8;
 }
+
 @font-face {
     font-family: Avenir;
     src: url('asset/images/Avenir-Black.ttf');
 }
+
 @font-face {
     font-family: Avenir;
     src: url('asset/images/Avenir-Medium.ttf');
 }
-*{
+
+* {
     font-family: Avenir;
 }
-.navbar{
+
+.navbar {
     height: 120px;
     box-shadow: none;
     background-color: var(--primary-bg);
 }
-p{
+
+p {
     margin: 0px;
 }
-.multi-form{
+
+.multi-form {
     margin-top: 80px;
     width: 100%;
     margin: auto;
 }
+
 /* =============== Extra  code ============== */
-.form-content1{
+.form-content1 {
     padding-bottom: 180px;
 }
+
 /* =============== end ============== */
 /* =========================================== */
 /* ============= Multi form Css -============= */
@@ -84,60 +92,72 @@ button:hover {
 }
 
 /* Make circles that indicate the steps of the form: */
-.step-data{
+.step-data {
     border: 3px solid var(--primary);
     border-radius: 3px;
 }
-.step p{
+
+.step p {
     padding: 0px 20px;
 }
+
 .step {
     padding: 20px;
     background-color: var(--primary);
     transition: all .3s ease-in-out;
 }
-.svg-color{
+
+.svg-color {
     filter: grayscale(100%) invert(100%) sepia(100%) saturate(0%) brightness(100%) contrast(100%);
 }
-.step p{
+
+.step p {
     color: var(--white-color);
 }
+
 .step.active {
     background-color: var(--white-color);
 }
-.step.active p{
+
+.step.active p {
     color: var(--primary);
 }
-.step.active .svg-color{
-    filter:invert(0);
+
+.step.active .svg-color {
+    filter: invert(0);
 }
-.step.active .svg-color1{
-    filter:invert(1);
+
+.step.active .svg-color1 {
+    filter: invert(1);
 }
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: var(--white-color);
+    background-color: var(--white-color);
 }
-.step.finish p{
+
+.step.finish p {
     color: var(--primary);
 }
-.step.finish .svg-color{
-    filter: invert(0) ;
+
+.step.finish .svg-color {
+    filter: invert(0);
     /* Off-white color */
 }
-.step.finish .svg-color1{
-    filter: invert(1) ;
+
+.step.finish .svg-color1 {
+    filter: invert(1);
     /* Off-white color */
 }
-.stepdata{
+
+.stepdata {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* ========================== Forms ============== */
-.form-content{
+.form-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,41 +166,44 @@ button:hover {
     /* width: 70%;
     margin: auto; */
 }
-.formdata{
-    
-}
+
+.formdata {}
+
 /* .step-data{
     width: 70%;
     margin: auto;
 } */
-.form-select{
+.form-select {
     height: 60px;
     margin-top: 20px;
     width: 100%;
 }
-.sub-btn{
+
+.sub-btn {
     width: 100%;
     margin-top: 25px;
     border-radius: 5px;
 }
-.sub-btn button{
+
+.sub-btn button {
     background-color: var(--primary);
     width: 100%;
     border-radius: 5px;
     transition: all .3s ease-in-out;
-    padding: 25px 30px ;
+    padding: 25px 30px;
     font-size: 14px;
     font-weight: 800;
     line-height: 19px;
     letter-spacing: 0.02em;
     text-align: center;
 }
-.sub-btn a{
+
+.sub-btn a {
     background-color: var(--primary);
     width: 100%;
     border-radius: 5px;
     transition: all .3s ease-in-out;
-    padding: 25px 30px ;
+    padding: 25px 30px;
     font-size: 14px;
     font-weight: 800;
     line-height: 19px;
@@ -189,27 +212,14 @@ button:hover {
     text-align: center;
     border: 2px solid var(--primary);
 }
-.pre button{
+
+.pre button {
     background-color: transparent !important;
     width: 100%;
     border-radius: 5px;
     color: var(--primary);
     transition: all .3s ease-in-out;
-    padding: 25px 30px ;
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 19px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    border: 2px solid var(--primary);
-}
-.pre a{
-    background-color: transparent !important;
-    width: 100%;
-    border-radius: 5px;
-    color: var(--primary) !important; 
-    transition: all .3s ease-in-out;
-    padding: 25px 30px ;
+    padding: 25px 30px;
     font-size: 14px;
     font-weight: 800;
     line-height: 19px;
@@ -218,12 +228,28 @@ button:hover {
     border: 2px solid var(--primary);
 }
 
-.log-btn{
+.pre a {
+    background-color: transparent !important;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--primary) !important;
+    transition: all .3s ease-in-out;
+    padding: 25px 30px;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border: 2px solid var(--primary);
+}
+
+.log-btn {
     width: 100%;
     margin-top: 8px;
     border-radius: 5px;
 }
-.log-btn a{
+
+.log-btn a {
     background-color: transparent;
     width: 100%;
     border-radius: 5px;
@@ -237,27 +263,32 @@ button:hover {
     text-align: center;
     border: 2px solid var(--primary);
 }
-.pre{
+
+.pre {
     margin-top: 10px;
 }
-.fabric-btn a{
+
+.fabric-btn a {
     border: 2px solid var(--primary);
 }
-.card-submit-btn button{
+
+.card-submit-btn button {
     border: 2px solid var(--primary);
 }
+
 /* =========================================== */
 /* ========= End Multi form Css -============= */
 /* =========================================== */
 
 
-.cards{
-   width: 90%;
-   margin: auto;
-   margin-top: 50px;
-   padding-bottom: 50px;
+.cards {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
-.card{
+
+.card {
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -266,119 +297,142 @@ button:hover {
     border: 1px solid #51515127;
 
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card-content p{
+
+.card-content p {
     padding-bottom: 25px;
 }
-.card-content{
+
+.card-content {
     padding: 20px;
 }
-.short p{
+
+.short p {
     padding-bottom: 50px;
 }
-.card-price p{
+
+.card-price p {
     font-weight: 500;
 }
-.card-btn{
+
+.card-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color:var(--primary-bg);
+    background-color: var(--primary-bg);
 }
-.card-btn button{
+
+.card-btn button {
     background-color: var(--primary);
     border-radius: 5px;
     padding: 10px 40px;
 }
-.card-submit-btn{
+
+.card-submit-btn {
     width: 50%;
 }
-.card-row{
+
+.card-row {
     padding-bottom: 70px;
 }
-.fabric-section{
+
+.fabric-section {
     margin-top: 100px;
 }
-.fabric-content{
+
+.fabric-content {
     width: 85%;
 }
 
 
 
 /* ====================== Fabric Card ===================== */
-.fabric-card{
+.fabric-card {
     /* padding: 20px; */
     border: 1px solid #51515131;
     border-radius: 5px;
     font-size: 14px;
     margin-top: 50px;
 }
-.f-head{
+
+.f-head {
     background-color: var(--primary-bg);
     width: 100%;
     text-align: center;
     padding: 20px;
 }
-.f-head h6{
 
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 25px;
-        letter-spacing: 0.02em;
-        text-align: center;
-        margin: 0px;
+.f-head h6 {
+
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 0px;
 }
-.f-head p{
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 19px;
-        letter-spacing: 0.02em;
-        text-align: center;
+
+.f-head p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
-.f-text{
+
+.f-text {
     padding: 14px;
     padding-top: 20px;
     text-align: center;
 }
-.f-text p{
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: center;
+
+.f-text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
 }
-.f-p2{
+
+.f-p2 {
     padding-top: 20px;
     padding-bottom: 30px;
     border-bottom: 1px solid #51515131;
 }
-.f-text p span{
+
+.f-text p span {
     font-weight: 500 !important;
     font-size: 15px;
 }
+
 .f-bed {
     padding: 14px 63px;
     text-align: center;
 }
-.f-bed p{
-    
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: center;
+
+.f-bed p {
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
 }
-.fabric-content{
+
+.fabric-content {
     width: 55%;
 }
-.moto-content{
+
+.moto-content {
     width: 32%;
 }
-.f-type{
+
+.f-type {
     display: flex;
     justify-content: space-between;
     width: 91%;
@@ -386,10 +440,12 @@ button:hover {
     background-color: var(--primary-bg);
     border-radius: 5px;
 }
-.f-type p{
+
+.f-type p {
     font-weight: 400;
 }
-.f-btn{
+
+.f-btn {
     background-color: var(--primary-bg);
     width: 100%;
     display: flex;
@@ -398,100 +454,118 @@ button:hover {
     padding: 20px 0px;
     margin-top: 30px;
 }
-.f-btn button{
-    background-color: transparent;
+
+.f-btn button {
+    background-color: var(--primary);
     border: 2px solid var(--primary);
-    color: var(--primary);
+    color: white;
     padding: 5px 30px;
     border-radius: 6px;
     transition: all .3s ease-in-out;
 }
-.f-btn button:hover{
+
+.f-btn button:hover {
     background-color: var(--primary);
     color: var(--white-color);
 }
-.f-card-bottom{
+
+.f-card-bottom {
     background-color: var(--primary-bg);
     padding: 20px 50px;
     text-align: center;
     margin-top: 50px;
 }
-.f-price{
+
+.f-price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 
 }
+
 .fabric-btn {
     width: 40%;
 }
 
-.fm-btn{    
+.fm-btn {
     margin-top: 100px;
 }
 
-.moto-section{
-    margin-top: 100px   ;
+.moto-section {
+    margin-top: 100px;
 }
-.moto-cards{
+
+.moto-cards {
     width: 90%;
 }
-.moto-card{
+
+.moto-card {
     /* padding: 20px; */
     border: 1px solid #51515136;
     border-radius: 5px;
     margin-top: 40px;
 }
-.moto-icon{
+
+.moto-icon {
     padding: 20px;
 }
-.moto-bed{
+
+.moto-bed {
     /* padding: 30px 0px; */
     /* padding: 20px; */
 }
-.moto-qty{
+
+.moto-qty {
     padding: 20px;
 }
-.moto-tag{
+
+.moto-tag {
     padding: 20px;
 }
-.moto-btn{
+
+.moto-btn {
     width: 100%;
     background-color: var(--primary-bg);
     padding: 20px
 }
-.moto-tag p{
+
+.moto-tag p {
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
     letter-spacing: 0.02em;
-   
+
 }
-.moto-btn button{
+
+.moto-btn button {
     background-color: var(--primary);
     padding: 6px 25px;
     color: white;
     border: 2px solid var(--primary);
     border-radius: 6px;
 }
-.moto-end-btn{
+
+.moto-end-btn {
     margin-top: 50px;
     width: 30%;
 }
-.moto-price{
+
+.moto-price {
     width: 30%;
 }
-.moto-last-btn{
+
+.moto-last-btn {
     margin-top: 35px;
 }
+
 .moto-last-btn a {
     background-color: transparent !important;
-    
+
     border-radius: 5px;
     color: var(--primary);
     transition: all .3s ease-in-out;
-    padding: 25px 159px;
+    padding: 25px 161px;
     font-size: 14px;
     font-weight: 800;
     line-height: 19px;
@@ -499,161 +573,182 @@ button:hover {
     text-align: center;
     border: 2px solid var(--primary);
 }
+
 /* +++++++++++++++++++ MODAL ========== ======= */
-.modal-btn{
+.modal-btn {
     background: transparent;
     box-shadow: none;
     color: var(--primary);
     border: none;
 }
-.modal-btn:hover{
+
+.modal-btn:hover {
     background: transparent;
     box-shadow: none !important;
     color: var(--primary);
 }
-.modal-btn:focus{
+
+.modal-btn:focus {
     background: var(--primary-bg) !important;
     box-shadow: none !important;
-    color: var(--primary) !important; 
+    color: var(--primary) !important;
 }
-.modal
 
+.modal
 
 /* +++++++++++++++++++ End MODAL ================= */
 /* =========================== PAYMENT SECTION ====================== */
-.payment-section{
+.payment-section {
     width: 100% !important;
 }
-.payment-row{
+
+.payment-row {
     margin-top: 50px;
-    width: 72%;
+    width: 100%;
 }
-.payment-head{
+
+.payment-head {
     padding: 20px;
     background-color: var(--primary-bg);
     margin-bottom: 10px;
     text-align: center;
 }
-.payment-head p{
+
+.payment-head p {
     font-family: Avenir;
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 24.59px;
-        letter-spacing: 0.02em;
-        text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24.59px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
-.order-col{
+
+.order-col {
     border: 1px solid #5151511f;
-        border-radius: 6px;
+    border-radius: 6px;
 }
-.order-sum{
+
+.order-sum {
     padding: 20px;
-   
+
 }
-.os-title span{
+
+.os-title span {
     font-family: Avenir;
-        font-size: 16px;
-        font-weight: 800;
-        line-height: 21.86px;
-        letter-spacing: 0.02em;
-        text-align: left;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21.86px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
-.os-title p{
+
+.os-title p {
     font-family: Avenir;
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 16.39px;
-        letter-spacing: 0.02em;
-        text-align: right;
-        padding-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16.39px;
+    letter-spacing: 0.02em;
+    text-align: right;
+    padding-top: 10px;
 }
-.os-change{
+
+.os-change {
     font-family: Avenir;
-        font-size: 12px;
-        font-weight: 300;
-        color: var(--primary);
-        line-height: 16.39px;
-        letter-spacing: 0.02em;
-        text-align: right;
-        padding-right: 3px;
-        border-right: 1px solid var(--primary);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 16.39px;
+    letter-spacing: 0.02em;
+    text-align: right;
+    padding-right: 3px;
+    border-right: 1px solid var(--primary);
 }
-.os-remove{
+
+.os-remove {
     font-family: Avenir;
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 16.39px;
-        letter-spacing: 0.02em;
-        text-align: right;
-        color: #BB4C4C;
-        padding-left: 6px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16.39px;
+    letter-spacing: 0.02em;
+    text-align: right;
+    color: #BB4C4C;
+    padding-left: 6px;
 }
-.osb-bed p{
+
+.osb-bed p {
     font-family: Avenir;
-        font-size: 16px;
-        font-weight: 800;
-        line-height: 21.86px;
-        letter-spacing: 0.02em;
-        text-align: left;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21.86px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
-.osb-count p{
+
+.osb-count p {
     font-family: Avenir;
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 16.39px;
-        letter-spacing: 0.02em;
-        text-align: left;
-        padding: 8px;
-        background-color: var(--primary-bg);
-        border-radius: 6px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16.39px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 8px;
+    background-color: var(--primary-bg);
+    border-radius: 6px;
 }
-.os-bed-sec{
+
+.os-bed-sec {
     margin-top: 50px;
     padding-bottom: 5px;
     border-bottom: 2px solid #51515149;
 }
-.osb-head p{
+
+.osb-head p {
     font-family: Avenir;
-        font-size: 16px;
-        font-weight: 800;
-        line-height: 21.86px;
-        letter-spacing: 0.02em;
-        text-align: left;
-        padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21.86px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding-bottom: 10px;
 }
-.osb-count{
+
+.osb-count {
     column-gap: 10px;
 }
 
-.order-total p{
+.order-total p {
     font-family: Avenir;
-        font-size: 16px;
-        font-weight: 800;
-        line-height: 21.86px;
-        letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21.86px;
+    letter-spacing: 0.02em;
 }
 
-.person-pay-form h6{
+.person-pay-form h6 {
     font-family: Avenir;
-        font-size: 16px;
-        font-weight: 800;
-        line-height: 21.86px;
-        text-align: left;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21.86px;
+    text-align: left;
 }
-.card-pay-sec{
-    margin: auto;
-    width: 72%;
+
+.card-pay-sec {
+    /* margin: auto; */
+    width: 100%;
     margin-top: 80px;
 }
-.person-pay-inp input{
+
+.person-pay-inp input {
     padding: 30px;
     height: 70px;
     border-radius: 6px;
 }
-.person-pay-inp{
+
+.person-pay-inp {
     padding: 10px 0px;
 }
-.card-logo{
+
+.card-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -663,73 +758,89 @@ button:hover {
     margin: 13px 0px;
     margin-top: 7px;
 }
-.coupen{
+
+.coupen {
     align-self: flex-end;
 }
-.coupen a{
+
+.coupen a {
     color: var(--primary);
 }
-.card-pay-check{
+
+.card-pay-check {
     background-color: var(--primary-bg);
-    width: 72%;
+    width: 100%;
+    /* width: 72%; */
     margin: auto;
     padding: 15px;
     border-radius: 6px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.card-pay-check input{
+
+.card-pay-check input {
     width: 3%;
     margin-left: 20px;
 }
-.card-pay-check p{
+
+.card-pay-check p {
     padding: 20px;
 }
-.card-pay-check a{
+
+.card-pay-check a {
     color: var(--primary);
     text-decoration: underline;
 }
-.pay-submit-btn{
-    width: 40%;
+
+.pay-submit-btn {
+    width: 56%;
     margin: auto;
 }
-.pay-total-price{
+
+.pay-total-price {
     width: 40%;
 }
 
 /* =========================== END PAYMENT SECTION ====================== */
-.moto-modal-btn{
+.moto-modal-btn {
     background-color: transparent;
     box-shadow: none;
     font-weight: 600;
     padding: 10px 0px 10px 0px;
 }
-.moto-modal-btn:hover{
+
+.moto-modal-btn:hover {
     box-shadow: none !important;
 }
-.cons-header{
+
+.cons-header {
 
     background-color: var(--primary-bg);
 }
-.cons-title{
+
+.cons-title {
     text-align: center;
     margin: auto;
     margin-right: 0px;
 }
-.cons-body{
+
+.cons-body {
     margin-top: 50px;
     width: 89%;
     margin: auto;
 }
-.cons-body p{
+
+.cons-body p {
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
 }
-.cons-btn{
+
+.cons-btn {
     width: 100%;
 }
-.cons-btn button{
+
+.cons-btn button {
     width: 100%;
     background-color: var(--primary);
     color: white;
@@ -753,11 +864,12 @@ button:hover {
 
 
 
-footer{
+footer {
     background-color: var(--primary);
     margin-top: 100px;
 }
-.footer-content p{
+
+.footer-content p {
     color: var(--white-color);
     padding: 20px 0px;
 }
@@ -772,39 +884,48 @@ footer{
 
 /* external css: flickity.css */
 
-.fabr-slide-content{
+.fabr-slide-content {
     padding: 50px;
 }
-.fabr-slide .img{
+
+.fabr-slide .img {
     border-radius: 10px;
     width: 97%;
 }
-.fabr-slide-content ul li{
+
+.fabr-slide-content ul li {
     padding: 8px 0px;
 }
-.carousel{
+
+.carousel {
     width: 100%;
 }
+
 .carousel-cell {
     width: 100%;
 }
+
 .flickity-page-dots {
     top: 38%;
 }
+
 .flickity-page-dots .dot {
     background-color: white;
     border: 2px solid black;
-    width: 15px ;
+    width: 15px;
     height: 15px;
     margin: 0px 5px;
 }
-.flickity-prev-next-button.next{
+
+.flickity-prev-next-button.next {
     display: none;
 }
-.flickity-prev-next-button.previous{
+
+.flickity-prev-next-button.previous {
     display: none;
 }
-.flickity-page-dots .dot.is-selected{
+
+.flickity-page-dots .dot.is-selected {
     background-color: black;
 }
 
@@ -824,29 +945,35 @@ footer{
 /* ============================================ */
 /* ============================================ */
 /* =================== End Flickty Slider ================= */
-.formdata{
+.formdata {
     margin-top: 40px;
 }
-.form-content1{
-    width: 50%;
+
+.form-content1 {
+    width: 70%;
+    margin: auto;
 }
-.fc1{
+
+.fc1 {
     width: 100%;
 }
-.text-area-modal{
+
+.text-area-modal {
     padding: 30px !important;
     border: 1px solid var(--primary) !important;
     border-radius: 6px;
     margin-top: 8px;
     width: 100%;
 }
+
 /* .text-area-modal:focus{
     border-color: var(--primary) !important;
     outline-color: var(--primary);
 } */
-.car-modal{
+.car-modal {
     /* height: 720px; */
 }
+
 /* ====================== */
 /* ====================== */
 /* ====================== */
@@ -874,7 +1001,7 @@ footer{
 }
 
 
-.button-div{
+.button-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -883,6 +1010,7 @@ footer{
     left: 225px;
     column-gap: 10px;
 }
+
 .button-div span {
     width: 15px;
     height: 15px;
@@ -890,31 +1018,73 @@ footer{
     border-radius: 100px;
     cursor: pointer;
 }
+
 /* ===================== */
-.carousel-indicators [data-mdb-target]{
+.carousel-indicators [data-mdb-target] {
     width: 10px;
     height: 10px;
     border-radius: 100px !important;
     border: 1px solid black;
     background-color: white;
 }
-.carousel-indicators .active{
+
+.carousel-indicators .active {
     background-color: black;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     top: 280px;
 }
-.car-modal-fabric{
+
+.car-modal-fabric {
     margin-top: -51px;
+    border-radius: 0.5rem;
 }
-.car-modal{
+
+.car-modal {
     padding: 0px;
 }
-.modal-header .btn-close{
+
+.modal-header .btn-close {
     z-index: 100;
     background-color: white;
     border-radius: 100px;
 }
-.fb-modal-header{
+
+.fb-modal-header {
     background-color: transparent;
+}
+
+.img {
+    border-radius: 0.5rem !important;
+}
+
+.modal-img {
+    border-radius: 0.5rem;
+}
+
+.payment-tab {
+    width: 72%;
+    margin: auto;
+}
+
+/* ============================= */
+.choose {
+    background-color: transparent !important;
+    border: 2px solid var(--primary);
+    color: var(--primary) !important;
+}
+
+.fabricChoose {
+    background-color: transparent !important;
+    border: 2px solid var(--primary);
+    color: var(--primary) !important;
+}
+
+.moto-select {
+    background-color: transparent !important;
+    padding: 6px 60px !important;
+    color: var(--primary) !important;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
 }
