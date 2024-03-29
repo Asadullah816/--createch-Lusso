@@ -121,15 +121,7 @@ function validateForm() {
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   for (i = 0; i < y.length; i++) {
-    if (y[i].type == "checkbox") {
-      if (!y[i].checked) {
-        y[i].classList.add("invalid");
-
-        valid = false;
-      } else {
-        y[i].classList.remove("invalid");
-      }
-    } else if (y[i].type == "radio") {
+    if (y[i].type == "radio") {
       var radioGroup = document.getElementsByName(y[i].name);
       var checked = false;
       for (j = 0; j < radioGroup.length; j++) {
