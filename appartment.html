@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lusso</title>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+
+  <!-- ----------------------------- -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+  <!-- -------------------------------------------------- -->
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="phone.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container justify-content-between">
+        <!-- Left elements -->
+        <div class="left-element">
+          <div class="whats-logo">
+            <a href=""><img src="asset/images/whats.svg" alt="" /></a>
+          </div>
+        </div>
+        <!-- Left elements -->
+
+        <!-- Center elements -->
+        <div class="center-element">
+          <div class="main-logo">
+            <a href="">
+              <img src="asset/images/image 1.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <div class="right-elemet">
+          <a href="">
+            <img src="asset/images/shopping-cart_1170678 1.png" alt="" />
+          </a>
+        </div>
+        <!-- Right elements -->
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </div>
+
+  <!-- ========================================================== -->
+  <!-- =================== Multi form =========================== -->
+  <!-- ========================================================== -->
+
+  <div class="container multi-form multi-form">
+    <div class="formdata d-flex justify-content-center align-items-center flex-column">
+      <form id="regForm" action="/action_page.php">
+        <div class="step-data d-flex justify-content-center align-items-center">
+          <div class="step d-flex justify-content-center align-items-center">
+            <div class="step-img">
+              <img class="svg-color" src="asset/images/apartment.svg" alt="" />
+            </div>
+            <p>Apartment</p>
+          </div>
+          <div class="step d-flex justify-content-center align-items-center">
+            <div class="step-img">
+              <img class="svg-color1" src="asset/images/fur.svg" alt="" />
+            </div>
+            <p>Furnishing</p>
+          </div>
+          <div class="step d-flex justify-content-center align-items-center">
+            <div class="step-img">
+              <img class="svg-color1" src="asset/images/fabr.svg" alt="" />
+            </div>
+            <p>Fabric</p>
+          </div>
+          <div class="step d-flex justify-content-center align-items-center">
+            <div class="step-img">
+              <img class="svg-color1" src="asset/images/moto.svg" alt="" />
+            </div>
+            <p>Motorisation</p>
+          </div>
+          <div class="step d-flex justify-content-center align-items-center">
+            <div class="step-img">
+              <img class="svg-color1" src="asset/images/pay.svg" alt="" />
+            </div>
+            <p>Payment</p>
+          </div>
+        </div>
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <div class="form-content form-content1">
+            <p>Select your apartment</p>
+            <form class="fc1" action="">
+              <select required class="form-select" name="" id="">
+                <option selected value="">401</option>
+                <option value="">402</option>
+                <option value="">403</option>
+                <option value="">404</option>
+              </select>
+              <div class="sub-btn">
+                <!-- <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                CONTINUE TO FURNISHINGS
+              </button> -->
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                  CONTINUE TO FURNISHINGS
+                </button>
+              </div>
+            </form>
+            <div class="log-btn">
+              <a href="index.html" type="button">BACK TO LOGIN</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <div class="cards d-flex justify-content-center align-items-center flex-column">
+            <div class="row card-row">
+              <div class="col-lg-4">
+                <div class="card">
+                  <img class="w-100" src="asset/images/card1.png" alt="" />
+                  <div class="card-content short">
+                    <h6>DESIGNER PACK</h6>
+                    <p>
+                      Single Blockout Roller Blind paired with sheer curtains.
+                      Ultimate flexibility with softer finish.
+                    </p>
+                  </div>
+                  <div class="w-100 card-btn">
+                    <div class="card-price">
+                      <span>From</span>
+                      <p>AUD $16,978.00</p>
+                    </div>
+                    <div class="fc-check-inp">
+                      <label for="fabricCard1">Choose</label>
+                      <input type="radio" id="fabricCard1" class="form-checkbox" name="fabricCard">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="asset/images/furcard1.png" alt="" />
+                  <div class="card-content">
+                    <h6>DUAL ROLLER BLINDS</h6>
+                    <p>
+                      Two roller blinds to every window - blockout blinds for
+                      privacy paired with sunscreen blinds for light control.
+                      Ultimate flexibility.
+                    </p>
+                  </div>
+                  <div class="card-btn">
+                    <div class="card-price">
+                      <span>From</span>
+                      <p>AUD $16,978.00</p>
+                    </div>
+                    <div class="fc-check-inp">
+                      <label for="fabricCard2">Choose</label>
+                      <input type="radio" id="fabricCard2" class="form-checkbox" name="fabricCard">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="asset/images/furcard2.png" alt="" />
+                  <div class="card-content">
+                    <h6>SINGLE ROLLER BLINDS</h6>
+                    <p>
+                      Single roller blinds to all windows - provide privacy light
+                      control. Blockout to bedroom and sunscreen blinds in living
+                      areas.
+                    </p>
+                  </div>
+                  <div class="card-btn">
+                    <div class="card-price">
+                      <span>From</span>
+                      <p>AUD $16,978.00</p>
+                    </div>
+                   <div class="fc-check-inp">
+                      <label for="fabricCard3">Choose</label>
+                      <input type="radio" id="fabricCard3" class="form-checkbox" name="fabricCard">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sub-btn card-submit-btn">
+              <!-- <button type="button">CONTINUE TO FABRIC</button> -->
+              <button href="Fabric.html" type="button" onclick="nextPrev(1)">CONTINUE TO FABRIC</button>
+            </div>
+            <div class="sub-btn pre card-submit-btn">
+              <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+              BACK TO APARTMENT
+            </button> -->
+              <button onclick="nextPrev(-1)" type="button"> BACK TO APARTMENT </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <div class="fabric-section d-flex justify-content-center align-items-center flex-column">
+            <div class="fabric-content text-center d-flex justify-content-center align-items-center flex-column">
+              <span>Please select the type of package you want.</span>
+              <p>
+                <b>
+                  Packages have been carefully crafted with your development’s
+                  interior design team.</b>
+                Installation included.
+              </p>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center flex-column">
+              <div class="col-lg-4">
+                <div class="fabric-card d-flex justify-content-center align-items-center flex-column">
+                  <div class="f-head">
+                    <h6>Premium Fabric</h6>
+                    <p>AUD $16,978.00</p>
+                  </div>
+                  <div class="f-text">
+                    <p>
+                      Premium Foam Coated "Avila" Blockout Roller blind and Linen
+                      Blend Sheer "Zepel Draper" Curtain to Living and Bedroom
+                      Windows. Complete Privacy and Light Control with a softer
+                      Finish
+                    </p>
+                    <p class="f-p2">
+                      <span>Note:</span> Penthouses to have 'Baltic' Blockout
+                      roller blinds
+                    </p>
+                  </div>
+                  <div class="f-bed">
+                    <p>Bed 1, Bed 2, Bed 3, Living, Study 12 x Roller Blinds</p>
+                  </div>
+                  <div class="f-type">
+                    <p>Avila Blockout</p>
+                    <p>White</p>
+                  </div>
+                  <div class="f-bed">
+                    <p>Bed 1, Bed 2, Bed 3, Living, Study 6 x Curtains</p>
+                  </div>
+                  <div class="f-type">
+                    <p>Zepel Draper</p>
+                    <p>Snow</p>
+                  </div>
+                  <div class="f-btn">
+                    <label for="fab-prem-deal">Select</label>
+                    <input type="radio" id="fab-prem-deal" class="form-checkbox-fabr-prem" name="fabric-prem">
+                  </div>
+                </div>
+                <div class="f-card-bottom">
+                  <div class="compare">
+                    <p></p>
+                    Not sure about the difference?
+                    <b type="button" class="btn  moto-modal-btn" data-mdb-ripple-init data-mdb-modal-init
+                      data-mdb-target="#staticBackdrop">Compare products</b>
+                    </p>
+                  </div>
+                </div>
+                <div class="f-price">
+                  <p>Total</p>
+                  <p>AUD $16,978.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="sub-btn fabric-btn fm-btn card-submit-btn">
+              <!-- <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                  CONTINUE TO MOTORISATION
+                </button> -->
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                CONTINUE TO MOTORISATION
+              </button>
+            </div>
+            <div class="sub-btn fabric-btn pre card-submit-btn">
+              <!-- <button
+                  type="button"
+                  class="btn modal-btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  GO TO CECKOUT
+                </button> -->
+              <button onclick="nextPrev(2)" type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                GO TO CECKOUT
+              </button>
+            </div>
+            <div class="sub-btn fabric-btn pre card-submit-btn">
+              <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                  BACK TO FURNISHINGS
+                </button> -->
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                BACK TO FURNISHINGS
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--==================== Modal =====================-->
+
+        <div class="modal fade" id="staticBackdrop" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header fb-modal-header">
+                <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body car-modal">
+                <!-- ============================= -->
+
+                <div class="car-modal-fabric">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel"
+                    data-mdb-carousel-init data-mdb-touch="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="fabr-slide">
+                          <div class="img w-100">
+                            <img class="modal-img w-100" src="asset/images/modal.png" alt="" />
+                          </div>
+                          <div class="fabr-slide-content d-flex justify-content-center align-items-center flex-column">
+                            <h5>Avila Blockout</h5>
+                            <ul>
+                              <li>
+                                Avila Plus Blockout fabric is an Australian Made
+                                fabric that blocks out light. Unlike sunscreens,
+                                Avila Plus Blockout will not let any light filter
+                                through the fabric.
+                              </li>
+                              <li>Has a plain weave and tonal foam backing.</li>
+                              <li>Superior insulating properties.</li>
+                              <li>
+                                Meets the Australian Standard for Colour Fastness to
+                                resist fading.
+                              </li>
+                              <li>100% polyester fabric composition.</li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+
+                      </div>
+                      <div class="carousel-item">
+                        <div class="fabr-slide">
+                          <div class="img w-100">
+                            <img class=" modal-img w-100" src="asset/images/modal1.jpg" alt="" />
+                          </div>
+                          <div class="fabr-slide-content d-flex justify-content-center align-items-center flex-column">
+                            <h5>Zen Blockout</h5>
+                            <ul>
+                              <li>
+                                Zen Blockout fabric is an Australian Made fabric that blocks out light. Unlike
+                                sunscreens,
+                                Zen Blockout will not let any light filter through the fabric.
+                              </li>
+                              <li>Inspired by the latest interior trends, Zen is ideal for traditional and contemporary
+                                applications</li>
+                              <li>100% polyester fabric composition and meets the Australian Standards for Colour
+                                fastness
+                                to resist fading (rating 6-7 Blue Scale)</li>
+                              <li>
+                                Fabric Weight of 350gms
+                              </li>
+                              <li>Excellent Solar Optical properties ratings; 95 rating for Light and Heat Absorption
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions"
+                      data-mdb-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions"
+                      data-mdb-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="moto-section d-flex justify-content-center align-items-center flex-column">
+            <div class="moto-content text-center d-flex justify-content-center align-items-center flex-column">
+              <span>Each room in your apartment is listed below.</span>
+              <p>
+                Please select if you would like to motorise your blinds.
+                <b> Learn more about SOMFY BATTERY</b>
+              </p>
+            </div>
+            <div class="moto-cards row d-flex justify-content-center align-items-center">
+              <div class="col-lg-4">
+                <div class="moto-card d-flex justify-content-center align-items-center flex-column">
+                  <div class="moto-icon w-100 d-flex justify-content-start align-items-center">
+                    <img class="" src="asset/images/moto-bed.png" alt="" />
+                  </div>
+                  <div class="moto-qty d-flex justify-content-between aling-items-center w-100">
+                    <div class="moto-bed">
+                      <p>Bed 3</p>
+                    </div>
+                    <div class="moto-bed">
+                      <p>1 x Window</p>
+                    </div>
+                  </div>
+                  <div class="moto-tag w-100 text-center">
+                    <p>Premium Single Roller & Sheer Curtain</p>
+                  </div>
+                  <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                    <label for="moto-inp1">Add Motorisation + AUD $650.00</label>
+                   <input type="checkbox" id="moto-inp1" class="moto-checkbox">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="moto-card d-flex justify-content-center align-items-center flex-column">
+                  <div class="moto-icon w-100 d-flex justify-content-start align-items-center">
+                    <img class="" src="asset/images/moto-bed.png" alt="" />
+                  </div>
+                  <div class="moto-qty d-flex justify-content-between aling-items-center w-100">
+                    <div class="moto-bed">
+                      <p>Bed 3</p>
+                    </div>
+                    <div class="moto-bed">
+                      <p>2 x Window</p>
+                    </div>
+                  </div>
+                  <div class="moto-tag w-100 text-center">
+                    <p>Premium Single Roller & Sheer Curtain</p>
+                  </div>
+                  <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                   <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                    <label for="moto-inp2">Add Motorisation + AUD $650.00</label>
+                   <input type="checkbox" id="moto-inp2" class="moto-checkbox">
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="moto-card d-flex justify-content-center align-items-center flex-column">
+                  <div class="moto-icon w-100 d-flex justify-content-start align-items-center">
+                    <img class="" src="asset/images/study-icon.png" alt="" />
+                  </div>
+                  <div class="moto-qty d-flex justify-content-between aling-items-center w-100">
+                    <div class="moto-bed">
+                      <p>Study</p>
+                    </div>
+                    <div class="moto-bed">
+                      <p>1 x Window</p>
+                    </div>
+                  </div>
+                  <div class="moto-tag w-100 text-center">
+                    <p>Premium Single Roller & Sheer Curtain</p>
+                  </div>
+                  <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                     <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                    <label for="moto-inp3">Add Motorisation + AUD $650.00</label>
+                   <input type="checkbox" id="moto-inp3" class="moto-checkbox">
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="moto-card d-flex justify-content-center align-items-center flex-column">
+                  <div class="moto-icon w-100 d-flex justify-content-start align-items-center">
+                    <img class="" src="asset/images/moto-bed.png" alt="" />
+                  </div>
+                  <div class="moto-qty d-flex justify-content-between aling-items-center w-100">
+                    <div class="moto-bed">
+                      <p>Bed 3</p>
+                    </div>
+                    <div class="moto-bed">
+                      <p>2 x Window</p>
+                    </div>
+                  </div>
+                  <div class="moto-tag w-100 text-center">
+                    <p>Premium Single Roller & Sheer Curtain</p>
+                  </div>
+                  <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                     <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                    <label for="moto-inp4">Add Motorisation + AUD $650.00</label>
+                   <input type="checkbox" id="moto-inp4" class="moto-checkbox">
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="moto-card d-flex justify-content-center align-items-center flex-column">
+                  <div class="moto-icon w-100 d-flex justify-content-start align-items-center">
+                    <img class="" src="asset/images/living-icon.png" alt="" />
+                  </div>
+                  <div class="moto-qty d-flex justify-content-between aling-items-center w-100">
+                    <div class="moto-bed">
+                      <p>Living</p>
+                    </div>
+                    <div class="moto-bed">
+                      <p>7 x Window</p>
+                    </div>
+                  </div>
+                  <div class="moto-tag w-100 text-center">
+                    <p>Premium Single Roller & Sheer Curtain</p>
+                  </div>
+                  <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                   <div class="moto-btn d-flex justify-content-center align-items-center align-self-center w-100">
+                    <label for="moto-inp5">Add Motorisation + AUD $650.00</label>
+                   <input type="checkbox" id="moto-inp5" class="moto-checkbox">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="f-card-bottom moto-end-btn">
+              <div class="compare">
+                <p>
+                  Don’t like any of these options?
+                  <b type="button" class="btn moto-modal-btn" data-mdb-ripple-init data-mdb-modal-init
+                    data-mdb-target="#exampleModal">Book a custom consultation.</b>
+                </p>
+              </div>
+            </div>
+            <!-- ================================== -->
+            <!-- ================================== -->
+            <!-- Modal -->
+          
+            <!-- ================================== -->
+            <!-- ================================== -->
+            <div class="f-price d-flex justify-content-between align-items-center moto-price">
+              <p>Total</p>
+              <p>AUD $16,978.00</p>
+            </div>
+            <div class="sub-btn fabric-btn fm-btn card-submit-btn">
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                CONTINUE TO PAYMENT
+              </button>
+              <!-- <button  type="button" id="nextBtn" onclick="nextPrev(1)">
+              CONTINUE TO PAYMENT
+            </button> -->
+            </div>
+            <div class="sub-btn fabric-btn pre card-submit-btn">
+              <button onclick="nextPrev(-1)" type="button" class="btn modal-btn btn-primary">
+                BACK TO FABRIC
+              </button>
+              <!-- <button type="button" class="btn modal-btn btn-primary">
+              BACK TO FABRIC
+            </button> -->
+            </div>
+            <div class="moto-last-btn">
+              <a href="appartment.html"> ADD ANOTHER APARTMENT </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab payment-tab">
+          <div class="payment-section w-100 d-flex justify-content-center ">
+            <div class="row payment-row">
+              <div class="col-lg-5">
+                <div class="payment-head">
+                  <p>SHORLINE QLD</p>
+                </div>
+                <div class="payment-img">
+                  <img class="w-100" src="asset/images/payment.png" alt="" />
+                </div>
+              </div>
+              <div class="order-col col-lg-7 p-0">
+                <div class="payment-head">
+                  <p>SHORLINE QLD</p>
+                </div>
+                <div class="order-sum">
+                  <div class="order-sum-head d-flex justify-content-between align-items-start">
+                    <div class="os-title d-flex justify-content-center align-items-start flex-column">
+                      <span>Apartment 401</span>
+                      <p>DESIGNER PACK - Premium Fabric</p>
+                    </div>
+                    <div class="os-action">
+                      <a class="os-change" href="#"> CHANGE </a>
+                      <a class="os-remove" href="#"> REMOVE </a>
+                    </div>
+                  </div>
+                  <div class="os-bed-sec d-flex justify-content-start align-items-start flex-column">
+                    <div class="osb-head">
+                      <p>Bed 1</p>
+                    </div>
+                    <div class="osb-count d-flex justify-content-start align-items-start">
+                      <p>2x Roller Blind (2x windows)</p>
+                      <p>1x Curtain (1x window)</p>
+                    </div>
+                  </div>
+                  <div class="os-bed-sec mt-4 d-flex justify-content-start align-items-start flex-column">
+                    <div class="osb-head">
+                      <p>Bed 2</p>
+                    </div>
+                    <div class="osb-count d-flex justify-content-start align-items-start">
+                      <p>2x Roller Blind (2x windows)</p>
+                      <p>1x Curtain (1x window)</p>
+                    </div>
+                  </div>
+                  <div class="os-bed-sec mt-4 d-flex justify-content-start align-items-start flex-column">
+                    <div class="osb-head">
+                      <p>Bed 3</p>
+                    </div>
+                    <div class="osb-count d-flex justify-content-start align-items-start">
+                      <p>2x Roller Blind (2x windows)</p>
+                      <p>1x Curtain (1x window)</p>
+                    </div>
+                  </div>
+                  <div class="os-bed-sec mt-4 d-flex justify-content-start align-items-start flex-column">
+                    <div class="osb-head">
+                      <p>Living</p>
+                    </div>
+                    <div class="osb-count d-flex justify-content-start align-items-start">
+                      <p>2x Roller Blind (2x windows)</p>
+                      <p>1x Curtain (1x window)</p>
+                    </div>
+                  </div>
+                  <div class="os-bed-sec mt-4 d-flex justify-content-start align-items-start flex-column">
+                    <div class="osb-head">
+                      <p>Study</p>
+                    </div>
+                    <div class="osb-count d-flex justify-content-start align-items-start">
+                      <p>2x Roller Blind (2x windows)</p>
+                      <p>1x Curtain (1x window)</p>
+                    </div>
+                  </div>
+                  <div class="order-total pt-4 d-flex justify-content-between align-items-center">
+                    <p>Total:</p>
+                    <p>AUD $16,978.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-pay-sec">
+            <div class="row card-pay-row">
+              <div class="col-lg-6">
+                <div class="person-pay-form">
+                  <h6>Personal Details</h6>
+                  <form action="" class="d-flex flex-column">
+                    <div class="person-pay-inp">
+                      <input type="text" placeholder="Name" name="" class="inp" id="" />
+                    </div>
+                    <div class="person-pay-inp">
+                      <input type="Email" placeholder="Email" name="" class="inp" id="" />
+                    </div>
+                    <div class="person-pay-inp">
+                      <input type="text" placeholder="Phone" name="" class="inp" id="" />
+                    </div>
+                    <div class="coupen">
+                      <a href="#"> [+] Add Coupon Code </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="person-pay-form">
+                  <h6>Personal Details</h6>
+                  <form action="" class="d-flex flex-column">
+                    <div class="card-logo person-pay-inp">
+                      <img src="asset/images/card.png" alt="" />
+                    </div>
+                    <div class="person-pay-inp">
+                      <input type="text " placeholder="Name on card" name="" class="inp" id="" />
+                    </div>
+                    <div class="person-pay-inp">
+                      <input type="text" placeholder="Card Number" name="" class="inp" id="" />
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="person-pay-inp">
+                          <input type="text" placeholder="Expiry Date" name="" class="inp" id="" />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="person-pay-inp">
+                          <input type="text" placeholder="CCV" name="" class="inp" id="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="coupen">
+                      <a href="#"> [+] Add Coupon Code </a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-pay-check d-flex p-0">
+            <input class="checkbox" type="checkbox" />
+            <p>
+              I agree to the <a href="">Terms and Conditions.</a> and confirm I am
+              purchasing blinds for Apartment 401, SHORLINE QLD.
+            </p>
+          </div>
+
+          <div class="pay-total-price f-price d-flex m-auto justify-content-between align-items-center moto-price">
+            <p>Total</p>
+            <p>AUD $16,978.00</p>
+          </div>
+          <div class="pay-submit-btn d-flex justify-content-center align-items-center flex-column">
+            <div class="sub-btn w-100 fabric-btn fm-btn card-submit-btn">
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                CONFIRM PAYMENT
+              </button>
+            </div>
+            <div class="sub-btn fabric-btn w-100 pre card-submit-btn">
+              <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" onclick="nextPrev(-1)">
+                BACK TO MOTORISATION
+              </button>
+            </div>
+            <div class="w-100 moto-last-btn payment-last-btn">
+              <a href="index.html"> ADD ANOTHER APARTMENT </a>
+            </div>
+          </div>
+        </div>
+        <!-- <div style="overflow: auto">
+            <div style="float: right">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                Previous
+              </button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                Next
+              </button>
+            </div>
+          </div> -->
+        <!-- Circles which indicates the steps of the form: -->
+      </form>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <footer class="d-flex justify-content-center align-items-center">
+      <div class="footer-content">
+        <p>
+          Copyright © 2024 Lusso Fashion for Windows. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content d-flex">
+                  <div class="cons-header modal-header">
+                    <h5 class="modal-title cons-title" id="exampleModalLabel">
+                      Book a consultation
+                    </h5>
+                    <button type="button" class="btn-close" data-mdb-ripple-init data-mdb-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="cons-body modal-body">
+                    <p>
+                      Book a time to meet with a consultant at our showroom to
+                      fully customise your package.
+                    </p>
+                    <form action="" class="d-flex flex-column">
+                      <div class="person-pay-inp">
+                        <input type="text" placeholder="Name*" name="" class="inp" id="" />
+                      </div>
+                      <div class="person-pay-inp">
+                        <input type="Email" placeholder="Email*" name="" class="inp" id="" />
+                      </div>
+                      <div class="person-pay-inp">
+                        <input type="text" placeholder="Contact Number*" name="" class="inp" id="" />
+                      </div>
+                      <div data-mdb-input-init class="form-outline mb-4">
+                        <textarea class="text-area-modal" id="form4Example3" placeholder="Message*" rows="4"></textarea>
+                      </div>
+                      <div class="cons-btn">
+                        <button>SEND</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+  <!-- ========================================================== -->
+  <!-- =================== End Multi form ======================= -->
+  <!-- ========================================================== -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

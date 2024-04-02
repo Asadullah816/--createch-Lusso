@@ -1,0 +1,119 @@
+@media(max-width:1270px) {
+    .form-data {
+        width: 72% !important;
+    }
+
+    .moto-cards {
+        width: 100%;
+    }
+
+    .moto-btn label {
+        padding: 6px 15px;
+    }
+
+    .moto-end-btn {
+        width: 45%;
+    }
+
+    .moto-last-btn a {
+        padding: 25px 161px;
+    }
+
+    .payment-tab {
+        width: 100%;
+    }
+
+    .fabric-btn {
+        width: 56%;
+    }
+
+    .cards {
+        width: 100%;
+    }
+}
+
+@media(max-width:1023px) {
+    .step {
+        padding: 20px 0px;
+    }
+
+    .f-card-bottom {
+        padding: 20px 180px;
+    }
+
+    .moto-end-btn {
+        padding: 20px;
+    }
+
+    .moto-last-btn a {
+        padding: 25px 95px;
+    }
+
+    .payment-last-btn a {
+        padding: 25px 94px;
+    }
+}
+
+@media(max-width:767px) {
+    .step p {
+        display: none;
+    }
+
+    .step {
+        padding: 20px;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    .sub-btn {
+        width: 100%;
+    }
+
+    .form-data {
+        width: 98% !important;
+    }
+
+    .fabric-content {
+        width: 77%;
+    }
+
+    .f-card-bottom {
+        padding: 20px 50px;
+    }
+
+    .carousel-indicators {
+        top: 230px;
+    }
+
+    .moto-content {
+        width: 100%;
+    }
+
+    .moto-end-btn {
+        width: 90%;
+    }
+
+    .moto-price {
+        width: 100%;
+    }
+
+    .card-pay-check p {
+        font-size: 12px;
+    }
+
+    .pay-submit-btn {
+        width: 100%;
+    }
+
+    .payment-last-btn a {
+        padding: 25px 100px;
+    }
+}
+
+@media(max-width:424px) {
+    .moto-last-btn a {
+        padding: 25px 75px;
+    }
+}
