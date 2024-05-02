@@ -69,7 +69,7 @@
           </div>
           <p>Apartment</p>
         </div>
-        <div class="step d-flex justify-content-center align-items-center">
+        <div class="step d-flex active justify-content-center align-items-center">
           <div class="step-img">
             <img class="svg-color1" src="asset/images/fur.svg" alt="" />
           </div>
@@ -94,32 +94,94 @@
           <p>Payment</p>
         </div>
       </div>
-
-      <div class="form-content form-content1">
-        <p>Select your apartment</p>
-        <form class="fc1" action="">
-          <select required class="form-select" name="" id="">
-            <option selected value="">401</option>
-            <option value="">402</option>
-            <option value="">403</option>
-            <option value="">404</option>
-          </select>
-          <div class="sub-btn">
-            <!-- <button type="submit" id="nextBtn" >
-                        CONTINUE TO FURNISHINGS
-                      </button> -->
-            <a href="Furnishing.html" type="button">
-              CONTINUE TO FURNISHINGS
-            </a>
+      <!-- One "tab" for each step in the form: -->
+      <form action="">
+        <div class="cards d-flex justify-content-center align-items-center flex-column">
+          <div class="row card-row">
+            <div class="col-lg-4">
+              <div class="card">
+                <img class="w-100" src="asset/images/card1.png" alt="" />
+                <div class="card-content short">
+                  <h6>DESIGNER PACK</h6>
+                  <p>
+                    Single Blockout Roller Blind paired with sheer curtains.
+                    Ultimate flexibility with softer finish.
+                  </p>
+                </div>
+                <div class="w-100 card-btn">
+                  <div class="card-price">
+                    <span>From</span>
+                    <p>AUD $16,978.00</p>
+                  </div>
+                  <div class="fc-check-inp">
+                    <label for="fabricCard1">Choose</label>
+                    <input type="radio" id="fabricCard1" class="form-checkbox" name="fabricCard">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="asset/images/furcard1.png" alt="" />
+                <div class="card-content">
+                  <h6>DUAL ROLLER BLINDS</h6>
+                  <p>
+                    Two roller blinds to every window - blockout blinds for
+                    privacy paired with sunscreen blinds for light control.
+                    Ultimate flexibility.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <div class="card-price">
+                    <span>From</span>
+                    <p>AUD $16,978.00</p>
+                  </div>
+                  <div class="fc-check-inp">
+                    <label for="fabricCard2">Choose</label>
+                    <input type="radio" id="fabricCard2" class="form-checkbox" name="fabricCard">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <img src="asset/images/furcard2.png" alt="" />
+                <div class="card-content">
+                  <h6>SINGLE ROLLER BLINDS</h6>
+                  <p>
+                    Single roller blinds to all windows - provide privacy light
+                    control. Blockout to bedroom and sunscreen blinds in living
+                    areas.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <div class="card-price">
+                    <span>From</span>
+                    <p>AUD $16,978.00</p>
+                  </div>
+                  <div class="fc-check-inp">
+                    <label for="fabricCard3">Choose</label>
+                    <input type="radio" id="fabricCard3" class="form-checkbox" name="fabricCard">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </form>
-        <div class="log-btn">
-          <a href="index.html" type="button">BACK TO LOGIN</a>
+          <div class="sub-btn card-submit-btn">
+            <!-- <button type="button">CONTINUE TO FABRIC</button> -->
+            <a href="Fabric.html" type="button">CONTINUE TO FABRIC</a>
+          </div>
+          <div class="sub-btn pre card-submit-btn">
+            <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                      BACK TO APARTMENT
+                    </button> -->
+            <button type="button"> BACK TO APARTMENT </a>
+          </div>
         </div>
-      </div>
-
+      </form>
     </div>
   </div>
+
   <div class="container-fluid p-0">
     <footer class="d-flex justify-content-center align-items-center">
       <div class="footer-content">
@@ -137,6 +199,24 @@
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
   <script src="script.js"></script>
+  <script>
+
+    var radioButtons = document.querySelectorAll(".form-checkbox");
+
+    radioButtons.forEach(function (radioButton) {
+      radioButton.addEventListener("change", function () {
+        document.querySelectorAll(".fc-check-inp label").forEach(function (label) {
+          label.classList.remove("checked-label");
+        });
+
+        if (radioButton.checked) {
+          var label = radioButton.parentElement.querySelector("label");
+          label.classList.add("checked-label");
+        }
+      });
+    });
+
+  </script>
 </body>
 
 </html>
