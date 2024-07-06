@@ -15,10 +15,6 @@
         width: 45%;
     }
 
-    .moto-last-btn a {
-        padding: 25px 161px;
-    }
-
     .payment-tab {
         width: 100%;
     }
@@ -29,6 +25,10 @@
 
     .cards {
         width: 100%;
+    }
+
+    .moto-last-btn {
+        width: 56%;
     }
 }
 
@@ -43,14 +43,6 @@
 
     .moto-end-btn {
         padding: 20px;
-    }
-
-    .moto-last-btn a {
-        padding: 25px 95px;
-    }
-
-    .payment-last-btn a {
-        padding: 25px 94px;
     }
 }
 
@@ -107,13 +99,9 @@
         width: 100%;
     }
 
-    .payment-last-btn a {
-        padding: 25px 100px;
+    .moto-last-btn {
+        width: 100%;
     }
 }
 
-@media(max-width:424px) {
-    .moto-last-btn a {
-        padding: 25px 75px;
-    }
-}
+@media(max-width:424px) {}

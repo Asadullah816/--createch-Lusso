@@ -1147,3 +1147,375 @@ footer {
     margin-bottom: 20px;
     display: none;
 }
+
+/* =========================== */
+/* ============ Register Page =============== */
+.login-form-btns span {
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.12px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.login-form-btns span a {
+    color: #247247;
+}
+
+.register-message {
+    width: 25%;
+    margin: auto;
+    row-gap: 10px;
+    margin-top: 60px;
+}
+
+.reg-content h4 {
+    font-family: Avenir;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.78px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.reg-content p {
+    text-align: center;
+    padding-top: 50px;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.reg-btn {
+    margin-top: 80px;
+}
+
+/* ========================= */
+.custom-btn1 {
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    color: var(--primary);
+    text-align: center;
+    font-family: Avenir;
+}
+
+.dark1 {
+    background-color: var(--primary);
+    color: white;
+}
+
+.furn-img {
+    max-height: 196px;
+    object-fit: cover;
+}
+
+.message {
+    position: fixed;
+    border-radius: 100px;
+    top: 100px;
+    display: block;
+    left: 36%;
+}
+
+.toast {
+    display: block !important;
+    border-radius: 100px;
+    width: 520px;
+}
+
+.main-body-toast {
+    justify-content: center;
+    align-items: center;
+}
+
+.toast-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px 20px;
+    width: 100%;
+}
+
+/* .success {
+    background: #B7F1D1;
+    color: #515151;
+} */
+
+.success .btn-close {
+    filter: invert(0) grayscale(100%) brightness(203%);
+    ;
+}
+
+.error {
+    background-color: #BB4C4C;
+    color: white;
+}
+
+.error .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* =============== Media =================== */
+@media(max-width:1440px) {
+    .message {
+        left: 32%;
+    }
+}
+
+@media(max-width:1290px) {
+    .message {
+        left: 29%;
+    }
+}
+
+@media(max-width:1100px) {
+    .message {
+        left: 24%;
+    }
+}
+
+@media(max-width:1023px) {
+    .message {
+        left: 16%;
+    }
+}
+
+@media(max-width:767px) {
+    .toast {
+        width: 370px;
+    }
+
+    .message {
+        left: 2%;
+    }
+
+    .toast-body {
+        padding: 8px 0px;
+    }
+}
+
+
+/* ================================================= */
+/* ================================================= */
+/* ================================================= */
+
+
+
+
+@media(max-width:1270px) {
+    .form-data {
+        width: 72% !important;
+    }
+
+    .moto-cards {
+        width: 100%;
+    }
+
+    .moto-btn label {
+        padding: 6px 15px;
+    }
+
+    .moto-end-btn {
+        width: 45%;
+    }
+
+
+    .payment-tab {
+        width: 100%;
+    }
+
+    .fabric-btn {
+        width: 56%;
+    }
+
+    .cards {
+        width: 100%;
+    }
+}
+
+@media(max-width:1023px) {
+    .step {
+        padding: 20px 0px;
+    }
+
+    .f-card-bottom {
+        padding: 20px 180px;
+    }
+
+    .moto-end-btn {
+        padding: 20px;
+    }
+
+    .moto-last-btn a {
+        padding: 25px 95px;
+    }
+
+    .payment-last-btn a {
+        padding: 25px 94px;
+    }
+}
+
+@media(max-width:767px) {
+    .step p {
+        display: none;
+    }
+
+    .step {
+        padding: 20px;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    .sub-btn {
+        width: 100%;
+    }
+
+    .form-data {
+        width: 98% !important;
+    }
+
+    .fabric-content {
+        width: 77%;
+    }
+
+    .f-card-bottom {
+        padding: 20px 50px;
+    }
+
+    .carousel-indicators {
+        top: 230px;
+    }
+
+    .moto-content {
+        width: 100%;
+    }
+
+    .moto-end-btn {
+        width: 90%;
+    }
+
+    .moto-price {
+        width: 100%;
+    }
+
+    .card-pay-check p {
+        font-size: 12px;
+    }
+
+    .pay-submit-btn {
+        width: 100%;
+    }
+
+    .payment-last-btn a {
+        padding: 25px 100px;
+    }
+
+    .footer-content p {
+        padding: 20px 15px;
+    }
+}
+
+@media(max-width:424px) {
+    .moto-last-btn a {
+        padding: 25px 75px;
+    }
+}
+
+
+
+
+
+
+
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
+@media(max-width:1300px) {
+    .moto-last-btn a {
+        padding: 0px;
+        border: none;
+    }
+
+    .moto-last-btn {
+        width: 40%;
+    }
+}
+
+@media(max-width:1270px) {
+    .moto-last-btn a {
+        padding: 0px;
+    }
+
+    .moto-last-btn {
+        width: 56%;
+    }
+}
+
+@media (max-width: 767px) {
+    .step {
+        padding: 20px;
+    }
+
+    .step p {
+        display: none;
+    }
+
+    .moto-last-btn a {
+        padding: 0px;
+    }
+
+    .moto-last-btn {
+        width: 1006%;
+    }
+}
+
+.moto-last-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary);
+    padding: 25px;
+    border-radius: 5px;
+    margin-top: 14px;
+    width: 40%;
+}
+
+.moto-last-btn a {
+    padding: 0px;
+    border: none;
+}
+
+.carousel-control-prev-icon::after {
+    content: '\f060';
+}
+
+.carousel-control-prev:hover {
+    color: black;
+}
+
+.carousel-control-next:hover {
+    color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 265px;
+    bottom: auto;
+    z-index: 1;
+    color: #000 !important;
+    opacity: .5;
+}
+
+.carousel-control-next-icon::after {
+    content: "\f061";
+}
